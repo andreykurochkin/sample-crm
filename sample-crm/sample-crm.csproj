@@ -6,18 +6,28 @@
         <ImplicitUsings>enable</ImplicitUsings>
         <UserSecretsId>aspnet-sample_crm-A542586C-0C89-4150-B296-9275FE6497DB</UserSecretsId>
         <RootNamespace>sample_crm</RootNamespace>
+        <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
     </PropertyGroup>
 
     <ItemGroup>
-        <None Update="app.db" CopyToOutputDirectory="PreserveNewest" ExcludeFromSingleFile="true"/>
+        <None Update="app.db" CopyToOutputDirectory="PreserveNewest" ExcludeFromSingleFile="true" />
     </ItemGroup>
 
     <ItemGroup>
-        <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="7.0.4"/>
-        <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="7.0.4"/>
-        <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="7.0.4"/>
-        <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="7.0.4"/>
-        <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.4"/>
+        <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="7.0.4" />
+        <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="7.0.4" />
+        <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="7.0.4" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="7.0.4" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.4" />
+        <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="7.0.10" />
+        <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="7.0.11" />
+        <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL.Design" Version="1.1.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Content Include="..\.dockerignore">
+        <Link>.dockerignore</Link>
+      </Content>
     </ItemGroup>
 
 </Project>
